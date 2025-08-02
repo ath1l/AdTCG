@@ -1,44 +1,74 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# AdTCG 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Ashlena & Athil
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Athil johnson - Albertian Institute of Science & Technology
+- Member 2: Ashlena Rose - Albertian Institute of Science & Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+AdTCG is a totally unnecessary trading card game where YouTube ads become collectible cards. A Chrome extension captures ad screenshots, and our Node.js server turns them into cards with AI-generated titles, rarities, and lore. Gotta mute catch ’em all!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Millions of YouTube ads go unappreciated every day. They interrupt our videos, they slow down our dopamine hits—and worst of all—they vanish into the void without ever becoming trading cards. Tragic.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built a Chrome extension that snapshots YouTube ads in real time, sends them to a server, lets AI hallucinate a card title and backstory, and proudly showcases them in a Bootstrap-powered gallery. Now, every annoying ad has a shot at becoming Legendary.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- **Languages used**
+  - JavaScript (because what else powers chaos?)
+  - HTML & CSS (for the shiny card display)
+
+- **Frameworks used**
+  - Node.js (the brain of the backend)
+  - Express.js (because writing raw Node HTTP routes is suffering)
+  - EJS (to inject life into static HTML like a wizard)
+  - Bootstrap (to pretend we know design)
+
+- **APIs used**
+  - [@google/genai](https://www.npmjs.com/package/@google/genai) – to let Gemini hallucinate ad descriptions  
+
+- **Tools used**
+  - Chrome Extension (Adstore) – spies on YouTube for you  
+  - MongoDB – stores your card collection like a digital binder  
+  - Git & GitHub – to version control all this nonsense  
+  - Postman – to test your POSTs like a post office employee
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
+> _Spoiler: You probably have everything already_
+
+- **Main components**
+  - Any computer that can run Chrome and Node.js
+  - A screen to display the ads you hate
+
+- **Specifications**
+  - A decent internet connection (for ads and AI wizardry)
+  - Google Chrome browser (for extension support)
+
+- **Tools required**
+  - Your patience with YouTube ads  
+  - A burning desire to turn annoyance into amusement
 
 ### Implementation
-For Software:
+This project consists of two main components:
+
+1. **Ad-server** – A Node.js/Express backend that receives and stores YouTube ad screenshots, assigns rarity and metadata, and serves them through a web interface.
+
+2. **Adstore (Chrome Extension)** – A frontend utility that detects YouTube ads, captures a screenshot, and sends it to the server.
+
+
 # Installation
-[commands]
+
 
 # Run
 [commands]
