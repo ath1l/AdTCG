@@ -135,16 +135,14 @@ The server will run at:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+![AdTCG working demo](screenshots/Screenrecord.mp4)
+*Shows the basic working demo of AdTCG*
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Athil johnson: serverside and backend
+- Ashlena Rose: Frontend
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
