@@ -67,14 +67,58 @@ This project consists of two main components:
 2. **Adstore (Chrome Extension)** – A frontend utility that detects YouTube ads, captures a screenshot, and sends it to the server.
 
 
-# Installation
+### Installation
+
+1. **Clone the repository and install dependencies:**
+```bash
+git clone https://github.com/athil/AdTCG.git
+cd AdTCG/Ad-server
+npm install
+````
+
+2. **Set up your `.env` file** in the root of `Ad-server`:
+
+```env
+GOOGLE_API_KEY=your_google_gemini_key_here
+```
+
+---
+
+### Chrome Extension Setup (Adstore)
+
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable **Developer Mode** (toggle in the top-right corner)
+3. Click **"Load Unpacked"**
+4. Select the folder: `AdTCG/Adstore`
+
+Once installed, the extension will:
+
+* Detect YouTube ads
+* Capture a screenshot of the video frame
+* Send the image to your local backend server
+
+---
+
+### Run
+
+Start the backend server:
+
+```bash
+node app.js
+```
+
+The server will run at:
+`http://localhost:3000`
+
+✅ Make sure the server is running before using the extension.
+
+```
+```
 
 
-# Run
-[commands]
 
 ### Project Documentation
-For Software:
+
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
