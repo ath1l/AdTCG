@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad Gallery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>YouTube Ad Gallery</h1>
+
+  <div class="card-container">
+    <% ads.forEach(ad => { %>
+      <div class="card">
+        <img src="/uploads/<%= ad.filename %>" alt="<%= ad.title %>">
+        <div class="card-content">
+          <h3><%= ad.title %></h3>
+          <p class="rarity">Rarity: <%= ad.rarity %></p>
+          <p><%= ad.description %></p>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
