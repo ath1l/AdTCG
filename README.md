@@ -134,9 +134,10 @@ The server will run at:
 
 
 ### Project Demo
-# Video
-https://youtu.be/-yv0SU-xIcM
+#### 🎥 Video Demo  
+[Click here to watch on YouTube](https://youtu.be/-yv0SU-xIcM)  
 *Shows the basic working demo of AdTCG*
+
 
 
 ## Team Contributions
