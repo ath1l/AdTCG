@@ -34,7 +34,17 @@ app.use(express.json({ limit: "10mb" }));
 
 app.get('/', async (req, res) => {
   const allAds = await Ad.find({});
-  res.render('index',{ads:allAds});
+
+   // Count each rarity type
+  const rarityCounts = {
+    common: await Ad.countDocuments({ rarity: 'common' }),
+    rare: await Ad.countDocuments({ rarity: 'rare' }),
+    epic: await Ad.countDocuments({ rarity: 'epic' }),
+    legendary: await Ad.countDocuments({ rarity: 'legendary' }),
+    mythic: await Ad.countDocuments({ rarity: 'mythic' }),
+  };
+
+  res.render('index',{ads:allAds , rarityCounts });
 });
 
 app.post("/upload", async (req, res) => {
@@ -74,7 +84,7 @@ app.post("/upload", async (req, res) => {
             data: base64ImageFile,
           },
         },
-        { text:   `This is a YouTube ad. Generate a JSON object with the following structure:
+        { text:   `This is a YouTube ad. Generate a JSON object with the following structure: dont always give common ,give legendarymnythic and epic in ever 1 in 8 th request
                 {
                   "title": "a short, creative and goofy title for the ad",
                   "description": "a 1-2 line summary of the ad",
